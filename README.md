@@ -13,7 +13,7 @@ docker run --rm -p 3838:3838 shiny-mf
 It should now be running at `localhost:3838`.
 
 ## Running Shiny via ShinyProxy in Docker
-ShinyProxy runs it Shiny dashboards in Docker containers. This approach also runs ShinyProxy itself in Docker. Therefore, the `docker.sock` from the host system is mounted to the container.
+ShinyProxy runs it Shiny dashboards in Docker containers. This approach also runs ShinyProxy itself in Docker. Therefore, the `docker.sock` from the host system is mounted to the container. In the `shinyproxy` directory, use the Dockerfile to build the image and run ShinyProxy in a container.
 ```bash
 docker network create sp-net
 docker build . -t shinyproxy-mf
