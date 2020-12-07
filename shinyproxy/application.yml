@@ -11,12 +11,6 @@ proxy:
   docker:
       internal-networking: true
   specs:
-  - id: euler
-    display-name: Hello Application
-    description: Application which demonstrates the basics of a Shiny app
-    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
-    container-image: shiny-euler:latest
-    container-network: sp-net
   - id: mf
     display-name: Mutation Frequency Dashboard
     description: Custom app which demonstrates the basics of a Shiny app
