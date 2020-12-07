@@ -11,7 +11,7 @@ proxy:
   docker:
       internal-networking: true
   specs:
-  - id: mf
+  - id: shiny-mf
     display-name: Mutation Frequency Dashboard
     description: Custom app which demonstrates the basics of a Shiny app
     container-cmd: ["R", "-e", "shiny::runApp('/srv/shiny-server/mf', 3838, host='0.0.0.0')"]

@@ -1,12 +1,7 @@
 version: '2.0'
 services:
-  shiny-mf:
-    build: ./
-    image: shiny-mf
-  shiny-proxy:
+  shinyproxy:
     build: ./shinyproxy/
-    image: shinyproxy-mf:latest
-    container_name: shinyproxy-mf
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
